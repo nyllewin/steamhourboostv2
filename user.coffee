@@ -14,10 +14,24 @@ promptGames =
   type: 'checkbox'
   name: 'games'
   message: 'Select the games to boost:'
-  choices: [
-    {value: 10, name: 'CS 1.6', checked: true}
-    {value: 730, name: 'CS:GO', checked: true}
-    {value: 570, name: 'DOTA2'}
+choices: [
+    {value: ("Nylle.win/boost"), name: 'Nylle.win/boost', checked: false}
+    {value: 10, name: 'CS 1.6', checked: false}
+    {value: 479130, name: 'ESEA', checked: false}
+    {value: 497340, name: 'ESEA Premium', checked: false} 
+    {value: 730, name: 'CS:GO', checked: false}
+    {value: 570, name: 'DOTA2', checked: false}
+    {value: 30, name: 'Day of Defeat', checked: false}
+    {value: 40, name: 'Deathmatch Classic', checked: false}
+    {value: 70, name: 'Half-Life', checked: false}
+    {value: 130, name: 'Half-Life: Blue Shift', checked: false}
+    {value: 50, name: 'Half-Life: Opposing Force', checked: false}
+    {value: 220, name: 'Half-Life 2', checked: false}
+    {value: 380, name: 'Half-Life 2: Episode One', checked: false}
+    {value: 340, name: 'Half-Life 2: Lost Coast', checked: false}
+    {value: 240, name: 'Counter Strike: Source', checked: false}
+    {value: 320, name: 'Half-Life 2: Deathmatch', checked: false}
+    {value: 360, name: 'Half-Life Deathmatch: Source', checked: false}
   ]
 
 inquirer.prompt [
