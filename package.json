@@ -2,14 +2,14 @@
   "name": "steamhourboostv2",
   "version": "2.3.1",
   "description": "Steam hour boost with two factor support",
-  "main": "boost.coffee",
+  "main": "boostA.coffee",
   "scripts": {
-    "start": "coffee boost.coffee",
+    "start": "coffee boostA.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frk1/steamhourboostv2.git"
+    "url": "git+https://github.com/nyllewin/steamhourboostv2.git"
   },
   "keywords": [
     "steam",
