@@ -4,6 +4,13 @@ SteamTotp    = require 'steam-totp'
 Promise      = require 'bluebird'
 moment       = require 'moment'
 EventEmitter = require 'events'
+SteamUser::setPersona = (state, name) ->
+
+  @_send SteamUser.EMsg.ClientChangeStatus,
+    'persona_state': state
+    'persona_state_flags': 4
+    'player_name': name
+  return
 
 module.exports = class SteamAccount extends EventEmitter
   constructor: (@name, @password, @sentry, @secret, @games, @indent=0) ->
@@ -54,7 +61,7 @@ module.exports = class SteamAccount extends EventEmitter
   boost: =>
     @login()
     .then =>
-      @client.setPersona SteamUser.EPersonaState.Offline
+      @client.setPersona SteamUser.EPersonaState.Online
       @client.gamesPlayed @games ? [10, 730]
       console.log "#{@logheader()} Starting to boost games!"
     .catch (err) => console.error "#{@logheader()} #{err}"
